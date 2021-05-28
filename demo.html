@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th data-column="id">序号</th>
+        <th data-column="name">姓名</th>
+        <th data-column="age">年龄</th>
+        <th data-column="addr">籍贯</th>
+      </tr>
+    </thead>
+  </table>
+
+  <script src="./src/jquery-1.12.4.js"></script>
+  <script src="./src/jquery.table.js"></script>
+
+  <script>
+    let list = [{
+      id: 1,
+      name: 'jack',
+      age: 1,
+      addr: '深圳'
+    },
+    {
+      id: 2,
+      name: 'jack2',
+      age: 16,
+      addr: '北京'
+    },
+    ]
+
+    $('table').table(list)
+  </script>
+</body>
+
+</html>
